@@ -1,12 +1,17 @@
 <% content_for :title, "Editing exam" %>
 
-<h1>Editing exam</h1>
+<h1 class="text-center mb-4 text-4xl font-extrabold  tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Editing exam</h1>
 
 <%= render "form", exam: @exam %>
 
 <br>
 
 <div>
-  <%= link_to "Show this exam", @exam %> |
-  <%= link_to "Back to exams", exams_path %>
+  <%= link_to @exam, class: "inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-500 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800" do %>
+    Edit this exam
+  <%end%>
+
+  <%= link_to exams_path, class: "inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-500 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800" do %>
+    Back to exams
+  <%end%>
 </div>

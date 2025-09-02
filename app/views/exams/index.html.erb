@@ -2,15 +2,14 @@
 
 <% content_for :title, "Exams" %>
 
-<h1>Exams</h1>
+<h1 class="text-center mb-4 text-4xl font-extrabold  tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Exams</h1>
 
-<div id="exams">
+<div id="exams" class="grid grid-cols-3 gap-2">
   <% @exams.each do |exam| %>
     <%= render exam %>
-    <p>
-      <%= link_to "Show this exam", exam %>
-    </p>
   <% end %>
 </div>
 
-<%= link_to "New exam", new_exam_path %>
+<%= link_to new_exam_path, class: "inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-500 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800" do %>
+  New exam
+<%end%>

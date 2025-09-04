@@ -105,6 +105,7 @@ GEM
     factory_bot_rails (6.5.0)
       factory_bot (~> 6.5)
       railties (>= 6.1.0)
+    ffaker (2.25.0)
     fugit (1.11.2)
       et-orbi (~> 1, >= 1.2.11)
       raabro (~> 1.4)
@@ -363,6 +364,7 @@ DEPENDENCIES
   cssbundling-rails
   debug
   factory_bot_rails
+  ffaker
   jbuilder
   jsbundling-rails
   kamal

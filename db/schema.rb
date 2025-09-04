@@ -26,7 +26,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_09_02_173742) do
     t.bigint "exam_id", null: false
     t.text "content"
     t.string "question_type"
-    t.text "options"
+    t.text "options", array: true
     t.text "correct_answer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

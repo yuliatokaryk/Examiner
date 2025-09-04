@@ -8,9 +8,9 @@
   <% @questions.each do |question| %>
     <%= render question %>
     <p>
-      <%= link_to "Show this question", question %>
+      <%= link_to "Show this question", question, class: "inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-500 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New question", new_question_path %>
+<%= link_to "New question", new_question_path, class: "inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-500 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800" %>

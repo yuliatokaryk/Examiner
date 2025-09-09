@@ -4,7 +4,7 @@ class CreateQuestions < ActiveRecord::Migration[8.0]
       t.references :exam, null: false, foreign_key: true
       t.text :content
       t.string :question_type
-      t.text :options, array: true
+      t.text :answer
       t.text :correct_answer
 
       t.timestamps

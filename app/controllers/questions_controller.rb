@@ -45,6 +45,6 @@ class QuestionsController < ApplicationController
     end
 
     def question_params
-      params.expect(question: [ :exam_id, :content, :question_type, :options, :correct_answer ])
+      params.expect(question: [ :exam_id, :content, :question_type, :answer, :correct_answer ])
     end
 end

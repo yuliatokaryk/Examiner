@@ -9,6 +9,7 @@ class QuestionsController < ApplicationController
   end
 
   def new
+    @exams = Exam.all
     @question = Question.new
   end
 
